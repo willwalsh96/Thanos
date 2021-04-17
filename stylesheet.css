@@ -1,7 +1,7 @@
 /* Custom properties/variables  */
 :root {
   --main-white: #cce3f3;
-  --main-red: #84838b; //wtw blue
+  --main-red: #cce3f3; //wtw blue
   --main-blue: #84838b;
   --main-gray: #84838b; //wtw grey
 }
@@ -73,7 +73,7 @@ body {
   font-size: 1.8rem; /* 18px */
   font-weight: 400;
   line-height: 1.4;
-  color: var(--main-white);
+  color: var(--main-gray);
 }
 
 h1,
@@ -97,7 +97,7 @@ ul {
 
 a {
   text-decoration: none;
-  color: var(--main-red);
+  color: var(--main-gray);
 }
 
 img {
@@ -141,7 +141,7 @@ img {
 }
 
 .nav-list a:hover {
-  background: var(--main-blue);
+  background: var(--main-red);
 }
 
 /* Welcome section */
@@ -153,15 +153,16 @@ img {
   align-items: center;
   width: 100%;
   height: 100vh;
-  background-color: #000;
-  background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+  background-color: #cce3f3;
+  /* background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%); */
 }
 
 .welcome-section > p {
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 200;
   font-style: italic;
-  color: var(--main-red);
+  color: var(--main-gray);
+  position: sticky;
 }
 
 /* Projects section */
@@ -169,13 +170,13 @@ img {
 .projects-section {
   text-align: center;
   padding: 10rem 2rem;
-  background: var(--main-blue);
+  background: var(--main-red);
 }
 
 .projects-section-header {
   max-width: 640px;
   margin: 0 auto 6rem auto;
-  border-bottom: 0.2rem solid var(--main-white);
+  border-bottom: 0.2rem solid var(--main-red);
 }
 
 @media (max-width: 28.75em) {
@@ -244,7 +245,7 @@ img {
 }
 
 .btn-show-all:hover {
-  background: var(--main-red);
+  background: var(--main-gray);
 }
 
 .btn-show-all:hover > i {
@@ -268,7 +269,7 @@ img {
   width: 100%;
   height: 80vh;
   padding: 0 2rem;
-  background: var(--main-gray);
+  background: var(--main-red);
 }
 
 .contact-section-header > h2 {
@@ -311,7 +312,7 @@ footer {
   display: flex;
   justify-content: space-evenly;
   padding: 2rem;
-  background: var(--main-gray);
+  background: var(--main-red);
   border-top: 4px solid var(--main-red);
 }
 
