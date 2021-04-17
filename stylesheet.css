@@ -1,3 +1,4 @@
+
 /* Custom properties/variables  */
 :root {
   --main-white: #cce3f3;
@@ -75,7 +76,9 @@ body {
   line-height: 1.4;
   color: var(--main-gray);
 }
-
+li {
+  color: var(--main-red);
+}
 h1,
 h2 {
   font-family: 'Raleway', sans-serif;
@@ -95,12 +98,16 @@ ul {
   list-style: none;
 }
 
-a {
+a.class1 {
+  text-decoration: none;
+  color: var(--main-red);
+}
+a.class2 {
   text-decoration: none;
   color: var(--main-gray);
 }
-
-img {
+/* used for header, contact, and code text cause they are hyperlinks */
+oimg {
   display: block;
   width: 100%;
 }
@@ -114,7 +121,7 @@ img {
   top: 0;
   left: 0;
   width: 100%;
-  background: var(--main-red);
+  background: var(--main-gray);
   box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
   z-index: 10;
 }
@@ -142,6 +149,8 @@ img {
 
 .nav-list a:hover {
   background: var(--main-red);
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+
 }
 
 /* Welcome section */
@@ -149,20 +158,23 @@ img {
 .welcome-section {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   width: 100%;
   height: 100vh;
   background-color: #cce3f3;
+  padding-top: 20rem;
   /* background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%); */
 }
 
 .welcome-section > p {
-  font-size: 2rem;
-  font-weight: 200;
+  font-size: 3rem;
+  font-weight: 500;
   font-style: italic;
   color: var(--main-gray);
   position: sticky;
+  align-items: center;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 /* Projects section */
@@ -173,10 +185,15 @@ img {
   background: var(--main-red);
 }
 
+.projects-header > h2 {
+  font-size: 3rem;
+}
+
 .projects-section-header {
-  max-width: 640px;
+  /* max-width: 640px; */
   margin: 0 auto 6rem auto;
   border-bottom: 0.2rem solid var(--main-red);
+  font-size: 3rem;
 }
 
 @media (max-width: 28.75em) {
@@ -213,7 +230,7 @@ img {
 }
 
 .code {
-  color: var(--main-gray);
+  color: var(--main-red);
   transition: color 0.3s ease-out;
 }
 
