@@ -152,7 +152,10 @@ oimg {
   box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
 
 }
+.class1 a:hover{
+  color: var(--main-gray);
 
+}
 /* Welcome section */
 
 .welcome-section {
