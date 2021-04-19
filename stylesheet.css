@@ -150,6 +150,7 @@ oimg {
 .nav-list a:hover {
   background: var(--main-red);
   box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+  color: var(--main-gray);
 
 }
 .class1 a:hover{
