@@ -182,12 +182,11 @@ oimg {
 }
 
 .resume {
-  position: absolute;
     margin: auto;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    
+
 align-items: center;
 background-color: #cce3f3;
 padding: 6rem 1rem;
