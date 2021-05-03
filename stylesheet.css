@@ -181,6 +181,11 @@ oimg {
   padding-right: 2rem;
 }
 
+.resume {
+align-items: center;
+background-color: #cce3f3;
+
+}
 /* Projects section */
 
 .projects-section {
