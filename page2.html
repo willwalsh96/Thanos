@@ -55,15 +55,15 @@
 <!-- END NAV -->
 
 <body>
-<button id="name">Name</button>
+<button id="FibButt">Name</button>
 <button id="city">City</button>
 <p>
-Your Name is <span id="outputName">____</span>. The city in which you live is <span id="outputCity">____</span>.
+Your Fibbonnacci input number is <span id="FibNum">____</span>. The next sumber in the Fibbonacci sequence in which you live is <span id="outputCity">____</span>.
 </p>
 <script>
-document.getElementById("name").onclick = function(){
-	var name = prompt("Enter your name");
-  document.getElementById("outputName").innerText = name;
+document.getElementById("FibButt").onclick = function(){
+	var name = prompt("Enter your number");
+  document.getElementById("FibNum").innerText = name;
 }
 
 document.getElementById("city").onclick = function(){
