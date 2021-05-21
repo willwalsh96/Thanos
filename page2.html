@@ -1,39 +1,3 @@
-<head>
-
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZEQ1GY3312">
-    </script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-ZEQ1GY3312');
-  </script>
-
-  <title>William Walsh</title>
-</head>
-
-<link
-  rel="stylesheet"
-  href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
-  integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
-  crossorigin="anonymous"
-/>
-<link
-  href="https://fonts.googleapis.com/css?family=Poppins:200i,300,400&display=swap"
-  rel="stylesheet"
-/>
-<link
-  href="https://fonts.googleapis.com/css?family=Raleway:700&display=swap"
-  rel="stylesheet"
-/>
-<link rel="stylesheet" type="text/css" href="stylesheet.css" media="screen"/>
-<link rel="global-new" type="text/css" href="global-new.css" media="screen"/>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="%PUBLIC_URL%/favicon-16x16.png?v8=qAJ44G5Bm7">
-
-<!-- START NAV -->
 
 <nav id="navbar" class="nav">
   <ul class="nav-list">
@@ -55,7 +19,7 @@
 <!-- END NAV -->
 
 <body>
-<button id="FibButt">Name</button>
+<button id="FibButt">Fib Number</button>
 <button id="city">City</button>
 <p>
 Your Fibbonnacci input number is <span id="FibNum">____</span>. The next sumber in the Fibbonacci sequence in which you live is <span id="outputCity">____</span>.
@@ -66,200 +30,23 @@ document.getElementById("FibButt").onclick = function(){
   document.getElementById("FibNum").innerText = name;
 }
 
+
 document.getElementById("city").onclick = function(){
 	var city = prompt("Enter your city");
   document.getElementById("outputCity").innerText = city;
 }
 </script>
+<script>
+function fibonacci(num, memo) {
+  memo = memo || {};
+
+  if (memo[num]) return memo[num];
+  if (num <= 1) return 1;
+
+  return memo[num] = fibonacci(num - 1, memo) + fibonacci(num - 2, memo);
+}
+</script>
+
+<p> <span id="memo[num]">____</span> fibonacci(name, memo) </p>
 </body>
 
-<!-- START WELCOME SECTION -->
-
-<!-- <section id="welcome-section" class="welcome-section">
-  <h1>Hola, 你好, ٱلسَّلَامُ عَلَيْكُمْ‎, Hi!</h1>
-  <p>My name is William Walsh, I'm an aspiring developer, data analyst, and network engineer.
-     This is my online portfolio. I'm looking a for a new position starting in Summer 2021, would you like to work with me?</p>
-</section> -->
-
-<!-- END WELCOME SECTION -->
-<!-- <section>
-  <embed src="WWalsh_Resume_0502_.pdf" type="application/pdf" width="100%" height="600px" />
-</section> -->
-<!-- <section id="resume" class="resume">
-  <object data="WWalsh Resume 0502_.pdf" type="application/pdf" width="100%" height="800px">
-    <p>It appears you don't have a PDF plugin for this browser.
-     No biggie... you can <a href="resume.pdf">click here to
-    download the PDF file.</a></p>
-  </object>
-</section> -->
-<!-- START PROJECTS SECTION -->
-
-<!-- <section id="projects" class="projects-section">
-  <h2 class="projects-section-header">Here are my projects. They are currently hosted using my personal domain and AWS Amplify, which can build apps straight from a GitHub respository!</h2> -->
-<!-- //personal gatsby site start -->
-  <!-- <div class="projects-grid">
-    <a
-      href="http://williamtecumsehwalsh.com"
-      target="_blank"
-      class="project project-tile, class1"
-    >
-      <img
-        class="project-image"
-        src="wtw1.png"
-        alt="project"
-      />
-      <p class="project-title">
-        <span class="code">&lt;</span>
-        Gatsby Resume
-        <span class="code">&#47;&gt;</span>
-      </p>
-    </a> -->
-    <!-- //Personal Gatsby site end
-      //need to fix images
-    //personal React Site Start -->
-    <!-- <a
-      href="http://current-branch.williamtecumsehwalsh.com"
-      target="_blank"
-      class="project project-tile, class1"
-    >
-      <img
-        class="project-image"
-        src= "wtw2.png"
-        alt="project"
-      />
-      <p class="project-title">
-        <span class="code">&lt;</span>
-        React Resume
-        <span class="code">&#47;&gt;</span>
-      </p>
-    </a> -->
-    <!-- <a
-      href="https://codepen.io/freeCodeCamp/full/wgGVVX"
-      target="_blank"
-      class="project project-tile"
-    >
-      <img
-        class="project-image"
-        src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/calc.png"
-        alt="project"
-      />
-      <p class="project-title">
-        <span class="code">&lt;</span>
-        JavaScript Calculator
-        <span class="code">&#47;&gt;</span>
-      </p>
-    </a> -->
-    <!-- <a
-      href="https://codepen.io/freeCodeCamp/full/mVEJag"
-      target="_blank"
-      class="project project-tile"
-    >
-      <img
-        class="project-image"
-        src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/map.jpg"
-        alt="project"
-      />
-      <p class="project-title">
-        <span class="code">&lt;</span>
-        Map Data Across the Globe
-        <span class="code">&#47;&gt;</span>
-      </p>
-    </a> -->
-    <!-- <a
-      href="https://codepen.io/freeCodeCamp/full/wGqEga"
-      target="_blank"
-      class="project project-tile"
-    >
-      <img
-        class="project-image"
-        src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/wiki.png"
-        alt="project"
-      />
-      <p class="project-title">
-        <span class="code">&lt;</span>
-        Wikipedia Viewer
-        <span class="code">&#47;&gt;</span>
-      </p>
-    </a> -->
-    <!-- <a
-      href="https://codepen.io/freeCodeCamp/full/KzXQgy"
-      target="_blank"
-      class="project project-tile"
-    >
-      <img
-        class="project-image"
-        src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/tic-tac-toe.png"
-        alt="project"
-      />
-      <p class="project-title">
-        <span class="code">&lt;</span>
-        Data Analysis
-        <span class="code">&#47;&gt;</span>
-      </p>
-    </a> -->
-  <!-- </div>
-
-  <a
-    href="https://github.com/willwalsh96/"
-    class="btn btn-show-all, class2"
-    target="_blank"
-    >There's more on my GitHub<i class="fas fa-chevron-right"></i
-  ></a>
-</section> -->
-
-<!-- END PROJECTS SECTION -->
-
-<!-- START CONTACT SECTION -->
-
-<!-- <section id="contact" class="contact-section">
-  <div class="contact-section-header">
-    <h2>Let's work together...</h2>
-    <p>How do you take your coffee?</p>
-  </div>
-  <div class="contact-links"> -->
-    <!-- <a
-      href="https://facebook.com/freecodecamp"
-      target="_blank"
-      class="btn contact-details"
-      ><i class="fab fa-facebook-square"></i> Facebook</a
-    > -->
-    <!-- <a
-      id="profile-link"
-      href="https://github.com/willwalsh96"
-      target="_blank"
-      class="btn contact-details, class2"
-      ><i class="fab fa-github"></i> GitHub</a -->
-    >
-    <!-- <a
-      href="https://twitter.com/freecodecamp"
-      target="_blank"
-      class="btn contact-details"
-      ><i class="fab fa-twitter"></i> Twitter</a
-    > -->
-    <!-- <a href="mailto:williamtecumsehwalsh@gmail.com" class="btn contact-details, class2"
-      ><i class="fas fa-at"></i> Send a mail</a
-    >
-    <a href="tel:630-981-4591" class="btn contact-details, class2"
-      ><i class="fas fa-mobile-alt"></i> Call me</a
-    >
-  </div>
-</section> -->
-
-<!-- END CONTACT SECTION -->
-
-<!-- START FOOTER SECTION -->
-
-<footer>
-  <!-- <p>
-    **This is just a fake portfolio. All the projects and contact details given
-    are not real.
-  </p>
-  <p>
-    &copy; Created for
-    <a href="https://www.freecodecamp.com/" target="_blank"
-      >freeCodeCamp <i class="fab fa-free-code-camp"></i
-    ></a>
-  </p> -->
-</footer>
-
-END FOOTER SECTION
