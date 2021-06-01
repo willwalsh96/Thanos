@@ -149,12 +149,27 @@ oimg {
 
 .nav-list a:hover {
   background: var(--main-red);
-  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+  /* box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4); */
   color: var(--main-gray);
+  text-decoration: none;
+
+}
+.nav-list a:link {
+  background: var(--main-gray);
+  /* box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4); */
+  color: var(--main-red);
+  text-decoration: none;
+
+}
+.nav-list a:visited {
+  background: var(--main-gray);
+  /* box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4); */
+  color: var(--main-red);
+  text-decoration: none;
 
 }
 .class1 a:hover{
-  color: var(--main-gray);
+  color: var(--main-red);
 
 }
 /* Welcome section */
