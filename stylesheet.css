@@ -273,6 +273,8 @@ margin-right: auto;
   width: 100%;
   object-fit: cover;
   background: #fff;
+  pointer-events: none;
+  "border: none;" 
 }
 
 .project-title {
