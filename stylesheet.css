@@ -1,11 +1,11 @@
 
 /* Custom properties/variables  */
 :root {
-  --main-white: #cce3f3;
-  --main-red: #cce3f3; 
+  --main-white: #FCFBBB;
+  --main-red: #FCFBBB; 
   /* //wtw blue */
-  --main-blue: #84838b;
-  --main-gray: #84838b; 
+  --main-blue: #F26D42;
+  --main-gray: #F26D42; 
   /* //wtw grey */
 }
 
@@ -183,7 +183,7 @@ oimg {
   align-items: center;
   width: 100%;
   height: 100vh;
-  background-color: #cce3f3;
+  background-color: #FCFBBB;
   padding-top: 20rem;
   /* background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%); */
 }
